@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rd</title>
+</head>
+<body>
+    <script>
+        var module = {};
+    </script>
+    <script src="rd-parse.js"></script>
+    <script src="gr.js"></script>
+    <script>
+    var p = new Parser(Grammar);
+
+    // var ast = p.parse("(az AND cz) ANY bb AND (NOT cc)");
+    var ast = p.parse("(cc AND dd) AND pp");
+    console.log(ast)
+    // console.log(JSON.stringify(ast, null, 2));
+    </script>
+    <!-- <script src="dc_tokenize.js"></script> -->
+</body>
+</html>
